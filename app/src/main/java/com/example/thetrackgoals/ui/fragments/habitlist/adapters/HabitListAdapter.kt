@@ -25,7 +25,7 @@ class HabitListAdapter : RecyclerView.Adapter<HabitListAdapter.MyViewHolder>() {
 //                habitsList[position]
 
                 val action =
-                    HabitListDirections.actionHabitListToUpdateHabitItem()
+                    HabitListDirections.actionHabitListToUpdateHabitItem(habitsList[position])
                 binding.root.findNavController().navigate(action)
             }
         }

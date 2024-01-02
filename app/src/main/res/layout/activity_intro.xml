@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".IntroActivity">
-
+    tools:context=".ui.introscreen.IntroActivity">
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
@@ -29,12 +27,12 @@
         android:layout_above="@id/circleIndicator"
         android:layout_centerInParent="true"
         android:layout_margin="20dp"
-        android:alpha="0"
+        android:alpha="1"
         android:background="@drawable/round_button"
         android:backgroundTint="#FF5722"
         android:padding="10dp"
-        android:text="Start making new habits!"
+        android:text="Start making new goals!"
         android:textColor="@android:color/white"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
 </RelativeLayout>
