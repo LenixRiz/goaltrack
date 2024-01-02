@@ -8,10 +8,13 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.thetrackgoals.R
 import com.example.thetrackgoals.ui.introscreen.IntroActivity
+import com.google.android.material.tabs.TabLayoutMediator
+import androidx.core.content.res.ResourcesCompat
 
 class MainActivity : AppCompatActivity() {
 
 //    private var userFirstTime = true
+    //action bar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

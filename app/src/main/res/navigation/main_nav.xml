@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/habitList">
+    app:startDestination="@id/splash">
 
     <fragment
         android:id="@+id/habitList"
@@ -37,5 +37,26 @@
         <argument
             android:name="selectedHabit"
             app:argType="com.example.thetrackgoals.data.models.Habit" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.thetrackgoals.splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_splash_to_habitList2"
+            app:destination="@id/habitList" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.thetrackgoals.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_habitList"
+            app:destination="@id/habitList" />
     </fragment>
 </navigation>
