@@ -84,7 +84,7 @@ class CreateHabitItem : Fragment(R.layout.fragment_create_habit_item),
 
             //add the habit if all the fields are filled
             habitViewModel.addHabit(habit)
-            Toast.makeText(context, "Habit created successfully!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Goals created successfully!", Toast.LENGTH_SHORT).show()
 
             //navigate back to our home fragment
             findNavController().navigate(R.id.action_createHabitItem_to_habitList)

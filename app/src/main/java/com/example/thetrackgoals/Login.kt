@@ -26,7 +26,7 @@ class Login : AppCompatActivity() {
         loginButton.setOnClickListener {
             if (username.text.toString() == "user" && password.text.toString() == "1234") {
                 // Jika kredensial valid, pindah ke halaman baru (contoh: HomeActivity)
-                val intent = Intent(this, BarActivity::class.java)
+                val intent = Intent(this, com.example.thetrackgoals.ui.fragments.habitlist.HabitList::class.java)
                 startActivity(intent)
                 finish() // Tutup aktivitas login agar tidak dapat kembali ke sini
                 Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
